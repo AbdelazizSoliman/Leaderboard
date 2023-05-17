@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  margin: 50% 0%;
   width: 70%;
   min-height: 50vh;
   height: min-content;
