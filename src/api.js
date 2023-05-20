@@ -1,18 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import axios from 'axios';
-
 const apiUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-
-export const createGame = async (name) => {
-  try {
-    const response = await axios.post(apiUrl, {
-      name,
-    });
-    return response.data;
-  } catch (error) {
-    throw new Error('Failed to create game');
-  }
-};
 
 export const getScores = async (gameId) => {
   try {

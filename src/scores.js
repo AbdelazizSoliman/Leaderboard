@@ -1,6 +1,6 @@
 import { getScores, addScore } from './api.js';
 
-const displayScores = (scores) => {
+export const displayScores = (scores) => {
   const scoresList = document.getElementById('scores-list');
   scoresList.innerHTML = '';
 
@@ -23,7 +23,6 @@ export const refreshScores = async (gameId) => {
 export const submitScore = async (gameId, user, score) => {
   try {
     await addScore(gameId, user, score);
-    await refreshScores(gameId);
   } catch (error) {
     throw new Error('Failed to submit score');
   }
