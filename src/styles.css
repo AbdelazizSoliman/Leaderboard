@@ -62,7 +62,7 @@ body {
 }
 
 #scores-list {
-border: 2px solid black;
-padding: 5px;
-background-color: rgb(243, 239, 239);
+  border: 2px solid black;
+  padding: 5px;
+  background-color: rgb(243, 239, 239);
 }
