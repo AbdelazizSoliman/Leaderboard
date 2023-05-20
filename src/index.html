@@ -27,8 +27,8 @@
       <h3>Add your score</h3>
       <form id="add-form">
 
-        <input type="text" id="name" name="name" placeholder="Your name" required="true">
-        <input type="text" id="score" name="score" placeholder="Your score" required="true">
+        <input type="text" id="name" name="name" placeholder="Your name" required="true" pattern="[A-Za-z ]+">
+        <input type="number" id="score" name="score" placeholder="Your score (1-100)" required="true" min="1" max="100">
         <button type="submit" id="add-button">Submit</button>
       </form>
     </div>
