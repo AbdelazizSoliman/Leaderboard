@@ -1,7 +1,7 @@
 import './styles.css';
 import { refreshScores, submitScore } from './scores.js';
 
-const gameId = 'ABC123';
+const gameId = 'ABCD1234';
 
 const clearInputs = () => {
   document.getElementById('name').value = '';
@@ -22,3 +22,9 @@ document
     await refreshScores(gameId);
     clearInputs();
   });
+
+document.getElementById('clear-all').addEventListener('click', () => {
+  const scoresList = document.getElementById('scores-list');
+  scoresList.innerHTML = '';
+  localStorage.removeItem('score');
+});

@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>leaderboard</title>
-<script defer src="main.bundle.js"></script></head>
+  <script defer src="main.bundle.js"></script>
+</head>
 
 <body>
   <div class="title">
@@ -27,8 +28,8 @@
       <h3>Add your score</h3>
       <form id="add-form">
 
-        <input type="text" id="name" name="name" placeholder="Your name" required="true">
-        <input type="text" id="score" name="score" placeholder="Your score">
+        <input type="text" id="name" name="name" placeholder="Your name" required="true" pattern="[A-Za-z ]+">
+        <input type="number" id="score" name="score" placeholder="Your score (1-100)" required="true" min="1" max="100">
         <button type="submit" id="add-button">Submit</button>
       </form>
     </div>
